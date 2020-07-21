@@ -13,7 +13,7 @@ class Solution:
             for i in range(m):
                 for j in range(n):
                     if grid[i][j] == '1':
-                        self.parent[i * n + j] = i * n + j  # 初始化时候将所有的陆地元素的上级初始化为自身，而所有的水域元素的上级默认为0
+                        self.parent[i * n + j] = i * n + j  # 初始化时候将所有的陆地元素的上级初始化为自身，而所有的水域元素的上级默认为-1
                         self.count += 1  # 这里count记录下了所有的陆地有多少种（把水域排除在外了）
 
         # 对于x，find函数找到x的上一级是谁，采用递归查找的方式，直接找到最终的Boss是谁
