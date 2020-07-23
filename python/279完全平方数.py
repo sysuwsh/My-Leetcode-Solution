@@ -4,7 +4,6 @@
 # 某一个节点的子节点为该节点减去数字列表平方后的值
 # 减完后如果是0，则当前层数就是最短的长度
 
-
 class Solution:
     def numSquares(self, n: int) -> int:
         max_square = int(pow(n, 0.5))
@@ -25,6 +24,18 @@ class Solution:
         return 0
 
 
-s = Solution()
-res = s.numSquares()
+# 动态规划的解法，但是在Leetcode上超时
+class Solution1:
+    def numSquares(self, n: int) -> int:
+        dp = [0] * (n + 1)
+        for i in range(n + 1):
+            dp[i] = i
+            for j in range(1, int(pow(i, 0.5)) + 1):
+                dp[i] = min(dp[i], dp[i - j ** 2] + 1)
+        return dp[n]
+
+
+s = Solution1()
+n = 2513
+res = s.numSquares(n)
 print(res)
