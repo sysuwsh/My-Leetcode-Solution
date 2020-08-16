@@ -3,13 +3,13 @@ import java.util.Arrays;
 public class Leetcode14 {
     public static void main(String[] args) {
         String[] strs = {"aba", "cba"};
-        String prefix = new Solution().longestCommonPrefix(strs);
+        String prefix = new Solution14().longestCommonPrefix(strs);
         System.out.println(prefix);
     }
 }
 
 // 分治法解决
-class Solution{
+class Solution14{
     public String longestCommonPrefix(String[] strs){
         if(strs.length == 0)
             return "";
@@ -43,7 +43,7 @@ class Solution{
 
 
 // 将字符串数据排序后，比较第一个和最后一个即可
-class Solution1{
+class Solution14_1{
     public String longestCommonPrefix(String[] strs){
         if(strs.length == 0)
             return "";
@@ -59,7 +59,7 @@ class Solution1{
     }
 }
 
-class Solution2{
+class Solution14_2{
     public String longestCommonPrefix(String[] strs) {
         if(strs.length == 0)
             return "";

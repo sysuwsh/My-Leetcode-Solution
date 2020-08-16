@@ -6,7 +6,7 @@ public class Leetcode111 {
     }
 }
 
-class Solution {
+class Solution111 {
     public int minDepth(TreeNode root) {
         if (root == null)
             return 0;
@@ -37,7 +37,7 @@ class Solution {
 
 
 // 其实这个题需要visited来存储，因为二叉树不存在环，因此不必考虑visited
-class Solution1 {
+class Solution111_1 {
     public int minDepth(TreeNode root) {
         if (root == null)
             return 0;
@@ -68,11 +68,3 @@ class Solution1 {
         return depth;
     }
 }
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
-

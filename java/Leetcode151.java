@@ -3,14 +3,14 @@ import java.util.Deque;
 
 public class Leetcode151 {
     public static void main(String[] args) {
-        Solution3 s = new Solution3();
+        Solution151 s = new Solution151();
         String a = "  hello   world! ";
         String b = s.reverseWords(a);
         System.out.print(b);
     }
 }
 
-class Solution{
+class Solution151{
     public String reverseWords(String s){
         s = s.trim();
         StringBuilder res = new StringBuilder();
@@ -26,7 +26,7 @@ class Solution{
 }
 
 // 双端队列解法
-class Solution1{
+class Solution151_1{
     public String reverseWords(String s){
         s = s.trim();
         ArrayDeque<String> dq = new ArrayDeque<>();
@@ -59,7 +59,7 @@ class Solution1{
 }
 
 // 自己写函数法
-class Solution3{
+class Solution151_2{
     public String reverseWords(String s){
         if(s.length() == 0){
             return "";

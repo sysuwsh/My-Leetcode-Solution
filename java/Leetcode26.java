@@ -1,12 +1,12 @@
 public class Leetcode26 {
     public static void main(String[] args) {
-        Solution4 s = new Solution4();
+        Solution26 s = new Solution26();
         int[] nums = new int[]{0};
         System.out.println(s.removeDuplicates(nums));
     }
 }
 
-class Solution4 {
+class Solution26 {
     public int removeDuplicates(int[] nums) {
         int i = 0;
         int j = 0;

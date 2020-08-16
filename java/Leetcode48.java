@@ -7,7 +7,7 @@ public class Leetcode48 {
                         {2, 4, 8, 10},
                         {13, 3, 6, 7},
                         {15, 14, 12, 16}};
-        Solution s = new Solution();
+        Solution48 s = new Solution48();
         s.rotate(test1);
         for(int[] x: test1) {
             for (int y : x) {
@@ -18,7 +18,7 @@ public class Leetcode48 {
     }
 }
 
-class Solution{
+class Solution48{
     public void rotate(int[][] matrix) {
         int tmp = 0;
         int n = matrix.length;

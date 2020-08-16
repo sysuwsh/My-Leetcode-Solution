@@ -1,7 +1,7 @@
 public class Leetcode498 {
     public static void main(String[] args) {
         int[][] test = {{1, 2, 3}, {4, 5, 6}};
-        Solution s = new Solution();
+        Solution498 s = new Solution498();
         int[] res = s.findDiagonalOrder(test);
         for(int x: res)
             System.out.print(x + " ");
@@ -12,7 +12,7 @@ public class Leetcode498 {
 // 因此可以采用 x + y = value（定值）
 // 向斜上遍历的时候，x-- (x >= 0)，y++ (y < n) n为列
 // 向斜下遍历的时候，y-- (y <= 0)，x++ (x < m) m为行
-class Solution{
+class Solution498 {
     public int[] findDiagonalOrder(int[][] matrix){
         int m = matrix.length;
         if(m == 0)

@@ -4,7 +4,7 @@ import java.util.Comparator;
 public class Leetcode56 {
     public static void main(String[] args) {
         int[][] a = {{1, 3}, {0, 0}, {0, 4}, {2, 8}, {9, 10}};
-        Solution s = new Solution();
+        Solution56 s = new Solution56();
         a = s.merge(a);
         for(int i = 0; i < a.length; ++i) {
             for (int j = 0; j < a[0].length; ++j) {
@@ -15,7 +15,7 @@ public class Leetcode56 {
     }
 }
 
-class Solution {
+class Solution56 {
     public int[][] merge(int[][] intervals) {
         // 先排序
         Arrays.sort(intervals, Comparator.comparingInt(v -> v[0]));

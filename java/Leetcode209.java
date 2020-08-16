@@ -4,7 +4,7 @@ public class Leetcode209 {
     }
 }
 
-class Solution {
+class Solution209 {
     public int minSubArrayLen(int s, int[] nums) {
         int start = 0;
         int end = 0;

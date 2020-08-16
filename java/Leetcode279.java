@@ -5,13 +5,13 @@ import java.util.Vector;
 public class Leetcode279 {
     public static void main(String[] args) {
         int n = 2513;
-        Solution1 s = new Solution1();
+        Solution279 s = new Solution279();
         System.out.println(s.numSquares(n));
     }
 }
 
 // 动态规划的方法
-class Solution1 {
+class Solution279 {
     public int numSquares(int n) {
         int[] dp = new int[n + 1];
         for (int i = 0; i < n + 1; ++i) {
@@ -26,7 +26,7 @@ class Solution1 {
 
 
 // BFS的方法
-class Solution {
+class Solution279_1 {
     public int numSquares(int n) {
         Queue<Integer> q = new LinkedList<>();
         q.offer(n);

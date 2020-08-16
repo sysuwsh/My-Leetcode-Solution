@@ -3,13 +3,13 @@ import java.util.List;
 
 public class Leetcode119 {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solution119 s = new Solution119();
         int n = 5;
         System.out.println(s.getRow(n).toString());
     }
 }
 
-class Solution {
+class Solution119 {
     public List<Integer> getRow(int rowIndex) {
         if (rowIndex < 0)
             return new ArrayList<>();

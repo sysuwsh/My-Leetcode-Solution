@@ -6,7 +6,7 @@ public class Leetcode73 {
         int[][] test2 = {{1, 0, 3}};
         int[][] test = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
 
-        Solution s = new Solution();
+        Solution73 s = new Solution73();
         s.setZeros(test);
         for(int i = 0; i < test.length; ++i){
             for(int j = 0; j < test[0].length; ++j){
@@ -17,7 +17,7 @@ public class Leetcode73 {
     }
 }
 
-class Solution{
+class Solution73{
     public void setZeros(int[][] matrix){
         // 判断第一行第一列是否有0元素
         boolean row_flag = false;

@@ -3,15 +3,7 @@ import java.util.*;
 public class Leetcode112 {
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x;}
-}
-
-
-class Solution {
+class Solution112 {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null)
             return false;
@@ -21,7 +13,7 @@ class Solution {
     }
 }
 
-class Solution1 {
+class Solution112_1 {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null)
             return false;
@@ -47,7 +39,7 @@ class Solution1 {
     }
 }
 
-class Solution2 {
+class Solution112_2 {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null)
             return false;

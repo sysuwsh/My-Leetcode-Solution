@@ -14,7 +14,7 @@ class TreeNode {
 }
 
 // 迭代的写法
-class Solution1 {
+class Solution94 {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
@@ -33,7 +33,7 @@ class Solution1 {
 }
 
 // 递归的写法
-class Solution {
+class Solution94_1 {
     public List<Integer> inorderTraversal(TreeNode root) {
         if (root == null)
             return null;

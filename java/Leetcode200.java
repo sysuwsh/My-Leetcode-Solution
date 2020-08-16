@@ -10,13 +10,13 @@ public class Leetcode200 {
                 {'1','1','0','0','0'},
                 {'0','0','1','0','0'},
                 {'0','0','0','1','1'}};
-        Solution s = new Solution();
+        Solution200 s = new Solution200();
         System.out.println(s.numIslands(grid));
     }
 }
 
 // 并查集的解法
-class Solution {
+class Solution200 {
     private class Union {
         private int[] parent;
         private int count = 0;
@@ -86,7 +86,7 @@ class Solution {
 
 
 // BFS的解法，我这里的队列存储的是每个项的坐标了，为了节省空间其实可以采用一个数来表示坐标，利用 x * m + y 得到每个坐标对应的数就可以
-class Solution1 {
+class Solution200_1 {
     private final int[][] direction = new int[][]{{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
 
     public int numIslands(char[][] grid) {
@@ -125,7 +125,7 @@ class Solution1 {
 
 
 // DFS的解法
-class Solution2 {
+class Solution200_2 {
     private final int[][] direction = new int[][]{{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
 
     public int numIslands(char[][] grid) {

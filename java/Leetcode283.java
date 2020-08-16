@@ -1,6 +1,6 @@
 public class Leetcode283 {
     public static void main(String[] args) {
-        Solution7 s = new Solution7();
+        Solution283 s = new Solution283();
         int[] nums = new int[]{1, 3, 0,1,0,3,12, 0, 0};
         s.moveZeroes(nums);
         for (int num : nums) {
@@ -9,7 +9,7 @@ public class Leetcode283 {
     }
 }
 
-class Solution7 {
+class Solution283 {
     public void moveZeroes(int[] nums) {
         int i = 0;
         for (int j = 0; j < nums.length; ++j) {
@@ -23,7 +23,7 @@ class Solution7 {
     }
 }
 
-class Solution6 {
+class Solution283_1 {
     public void moveZeroes(int[] nums) {
         int i = 0;
         int j = 0;
@@ -41,7 +41,7 @@ class Solution6 {
     }
 }
 
-class Solution283 {
+class Solution283_2 {
     public void moveZeroes(int[] nums) {
         int i = 0;
         int j;

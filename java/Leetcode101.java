@@ -4,15 +4,8 @@ import java.util.Queue;
 public class Leetcode101 {
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
-
 // 递归的方式
-class Solution {
+class Solution101 {
     public boolean isSymmetric(TreeNode root) {
         if (root == null)
             return true;
@@ -31,7 +24,7 @@ class Solution {
 }
 
 // 迭代的方式
-class Solution1 {
+class Solution101_1 {
     public boolean isSymmetric(TreeNode root) {
         if (root == null || (root.left == null && root.right == null))
             return true;

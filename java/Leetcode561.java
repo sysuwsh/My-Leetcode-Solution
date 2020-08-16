@@ -2,14 +2,14 @@ import java.util.Arrays;
 
 public class Leetcode561 {
     public static void main(String[] args) {
-        Solution1 s = new Solution1();
+        Solution561 s = new Solution561();
         int[] num = new int[]{6214, -2290, 2833, -7908};
         int sum = s.arrayPairSum(num);
         System.out.println(sum);
     }
 }
 
-class Solution {
+class Solution561 {
     public int arrayPairSum(int[] nums) {
         int sum = 0;
         Arrays.sort(nums);
@@ -21,7 +21,7 @@ class Solution {
 }
 
 // 采用hash的方式，时间复杂度为O(n)
-class Solution1 {
+class Solution561_1 {
     public int arrayPairSum(int[] nums){
         int[] count = new int[20005];
         int sum = 0;

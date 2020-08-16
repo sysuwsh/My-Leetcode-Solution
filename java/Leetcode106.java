@@ -4,14 +4,7 @@ import java.util.Map;
 public class Leetcode106 {
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x;}
-}
-
-class Solution {
+class Solution106 {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         if (inorder.length == 0 || postorder.length == 0)
             return null;
@@ -30,7 +23,7 @@ class Solution {
                 int[] postorderRight = Arrays.copyOfRange(postorder, i, postorder.length - 1);
                 root.left = recursion(inorderLeft, postorderLeft);
                 root.right = recursion(inorderRight, postorderRight);
-                break;  
+                break;
             }
         }
         return root;

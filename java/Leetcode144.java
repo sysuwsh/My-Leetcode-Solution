@@ -5,15 +5,8 @@ import java.util.Stack;
 public class Leetcode144 {
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
-
 // 迭代的方式
-class Solution {
+class Solution144 {
     public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null)
             return new ArrayList<>();
@@ -33,7 +26,7 @@ class Solution {
 }
 
 // 递归的方式
-class Solution1 {
+class Solution144_1 {
     public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null)
             return new ArrayList<>();

@@ -1,12 +1,12 @@
 public class Leetcode5 {
     public static void main(String[] args) {
         String a = "abcdefg";
-        System.out.println(new Solution1().longestPalindrome(a));
+        System.out.println(new Solution5_1().longestPalindrome(a));
     }
 }
 
 // 中心扩散法
-class Solution {
+class Solution5 {
     public String longestPalindrome(String s) {
         if(s.length() < 2){
             return s;
@@ -32,7 +32,7 @@ class Solution {
 }
 
 // 动态规划
-class Solution1{
+class Solution5_1{
     public String longestPalindrome(String s){
         int  sLen = s.length();
         if(sLen < 2){

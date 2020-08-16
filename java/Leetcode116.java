@@ -23,7 +23,7 @@ class Node {
 
 
 // 迭代的方法
-class Solution {
+class Solution116 {
     public Node connect(Node root) {
         if (root == null)
             return root;
@@ -43,7 +43,7 @@ class Solution {
 }
 
 // 递归的方式
-class Soultion1 {
+class Solution116_1 {
     public Node connect(Node root) {
         if (root == null)
             return null;

@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Leetcode118 {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solution118 s = new Solution118();
         int a = 0;
         List<List<Integer>> res = s.generate(a);
         for (List<Integer> x : res) {
@@ -16,7 +16,7 @@ public class Leetcode118 {
 }
 
 // 动态规划方法
-class Solution {
+class Solution118 {
     public List<List<Integer>> generate(int numRows) {
         if (numRows < 1)
             return new ArrayList<>();
@@ -36,7 +36,7 @@ class Solution {
 }
 
 // 普通方法
-class Solution1 {
+class Solution118_1 {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> res = new ArrayList<>();
         if (numRows < 1)

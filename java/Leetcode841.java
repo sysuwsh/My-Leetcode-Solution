@@ -7,7 +7,7 @@ public class Leetcode841 {
 }
 
 // dfs递归的方式
-class Solution {
+class Solution841 {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         Set<Integer> visited = new HashSet<>();
         visited.add(0);
@@ -25,7 +25,7 @@ class Solution {
 }
 
 // dfs迭代的方式
-class Solution1 {
+class Solution841_1 {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         Set<Integer> visited = new HashSet<>();
         visited.add(0);
@@ -45,7 +45,7 @@ class Solution1 {
 }
 
 // bfs的方式
-class Solution2 {
+class Solution841_2 {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         Set<Integer> visited = new HashSet<>();
         visited.add(0);

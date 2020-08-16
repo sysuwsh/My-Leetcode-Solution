@@ -4,13 +4,13 @@ import java.util.Stack;
 
 public class Leetcode150 {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solution150 s = new Solution150();
         String[] tokens = new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
         System.out.println(s.evalRPN(tokens));
     }
 }
 
-class Solution {
+class Solution150 {
     public int evalRPN(String[] tokens) {
         if (tokens.length == 0)
             return 0;

@@ -3,14 +3,7 @@ import java.util.Arrays;
 public class Leetcode105 {
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x;}
-}
-
-class Solution {
+class Solution105 {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder.length == 0 || inorder.length == 0)
             return null;

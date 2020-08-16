@@ -2,13 +2,13 @@ import java.awt.*;
 
 public class Leetcode557 {
     public static void main(String[] args) {
-        Solution1 s = new Solution1();
+        Solution557 s = new Solution557();
         String a = "Let's take LeetCode contest";
         System.out.println(s.reverseWords(a));
     }
 }
 
-class Solution1 {
+class Solution557 {
     public String reverseWords(String s) {
         String[] words = s.split(" ");
         StringBuilder res = new StringBuilder();
@@ -21,7 +21,7 @@ class Solution1 {
 }
 
 
-class Solution {
+class Solution557_1 {
     public String reverseWords(String s) {
         StringBuilder res = new StringBuilder(s);
         int i = 0;

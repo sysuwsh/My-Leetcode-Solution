@@ -3,16 +3,8 @@ import java.util.*;
 public class Leetcode145 {
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
-
-
 // 迭代方式1，采用改造过后的先序遍历结果的逆序
-class Solution {
+class Solution145 {
     public List<Integer> postorderTraversal(TreeNode root) {
         if (root == null)
             return new ArrayList<>();
@@ -37,7 +29,7 @@ class Solution {
 }
 
 // 迭代方式2，严格按照后序遍历的顺序来
-class Solution1 {
+class Solution145_1 {
     public List<Integer> postorderTraversal(TreeNode root) {
         if (root == null)
             return new ArrayList<>();
@@ -64,7 +56,7 @@ class Solution1 {
 }
 
 // 递归的方式
-class Solution2 {
+class Solution145_2 {
     public List<Integer> postorderTraversal(TreeNode root) {
         if (root == null)
             return new ArrayList<>();

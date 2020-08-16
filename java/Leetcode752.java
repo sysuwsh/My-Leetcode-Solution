@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Leetcode752 {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solution752 s = new Solution752();
         String[] deadends = new String[]{"0201", "0101", "0102", "1212", "2002"};
         String target = "0202";
         System.out.println(s.openLock(deadends, target));
@@ -12,7 +12,7 @@ public class Leetcode752 {
 
 // 采用双向BFS的方式，就是从start起始点和target目标点同时做BFS扩散，当相遇的时时候就说明找到路径了
 // 这样的好处是可以节省一点时间，有可能不需要遍历整个图就能找到最短路径
-class Solution {
+class Solution752 {
     public int openLock(String[] deadens, String target) {
         Set<String> deads = new HashSet<>(Arrays.asList(deadens));
         Set<String> visited = new HashSet<>();
@@ -94,7 +94,7 @@ class Solution {
 // "0001" "0010" "0100" "1000" "0009" "0090" "0900" "9000"
 // 寻找到target这个状态，就是采用BFS求从"0000"到target的最短路径
 // 当然，中间需要避免deadens里面的东西，以及如果一个状态已经访问过了，就忽略掉
-class Solution1 {
+class Solution752_1 {
     public int openLock(String[] deadends, String target) {
         Set<String> deads = new HashSet<>();
         Set<String> visited = new HashSet<>();

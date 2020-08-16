@@ -7,14 +7,7 @@ public class Leetcode102 {
 
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
-
-class Solution {
+class Solution102 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         if (root == null)
             return new ArrayList<>();
@@ -44,7 +37,7 @@ class Solution {
     }
 }
 
-class Solution1 {
+class Solution102_1 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> ans = new ArrayList<>();
         recursion(root, 0, ans);

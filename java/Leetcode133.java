@@ -6,41 +6,41 @@ public class Leetcode133 {
     }
 }
 
-class Node {
+class Node2 {
     public int val;
-    public List<Node> neighbors;
+    public List<Node2> neighbors;
 
-    public Node() {
+    public Node2() {
         val = 0;
-        neighbors = new ArrayList<Node>();
+        neighbors = new ArrayList<Node2>();
     }
 
-    public Node(int _val) {
+    public Node2(int _val) {
         val = _val;
-        neighbors = new ArrayList<Node>();
+        neighbors = new ArrayList<Node2>();
     }
 
-    public Node(int _val, ArrayList<Node> _neighbors) {
+    public Node2(int _val, ArrayList<Node2> _neighbors) {
         val = _val;
         neighbors = _neighbors;
     }
 }
 
 // 采用DFS的方式遍历图
-class Solution1 {
-    public Node cloneGraph(Node node) {
-        Map<Node, Node> visited = new HashMap<>();
-        return dfs(node, visited);
+class Solution133 {
+    public Node2 cloneGraph(Node2 Node2) {
+        Map<Node2, Node2> visited = new HashMap<>();
+        return dfs(Node2, visited);
     }
 
-    public Node dfs(Node node, Map<Node, Node> visited) {
-        if (node == null)
+    public Node2 dfs(Node2 Node2, Map<Node2, Node2> visited) {
+        if (Node2 == null)
             return null;
-        if (visited.containsKey(node))
-            return visited.get(node);
-        Node clone = new Node(node.val, new ArrayList<>());
-        visited.put(node, clone);
-        for (Node n: node.neighbors) {
+        if (visited.containsKey(Node2))
+            return visited.get(Node2);
+        Node2 clone = new Node2(Node2.val, new ArrayList<>());
+        visited.put(Node2, clone);
+        for (Node2 n: Node2.neighbors) {
             clone.neighbors.add(dfs(n, visited));
         }
         return clone;
@@ -48,20 +48,20 @@ class Solution1 {
 }
 
 // 采用BFS的方式遍历图
-class Solution2 {
-    public Node cloneGraph(Node node) {
-        if (node == null)
+class Solution133_2 {
+    public Node2 cloneGraph(Node2 Node2) {
+        if (Node2 == null)
             return null;
-        Queue<Node> queue = new LinkedList<>();
-        queue.offer(node);
-        Node clone = new Node(node.val, new ArrayList<>());
-        Map<Node, Node> visited = new HashMap<>();
-        visited.put(node, clone);
+        Queue<Node2> queue = new LinkedList<>();
+        queue.offer(Node2);
+        Node2 clone = new Node2(Node2.val, new ArrayList<>());
+        Map<Node2, Node2> visited = new HashMap<>();
+        visited.put(Node2, clone);
         while (!queue.isEmpty()) {
-            Node tmp = queue.poll();
-            for (Node n: tmp.neighbors) {
+            Node2 tmp = queue.poll();
+            for (Node2 n: tmp.neighbors) {
                 if (!visited.containsKey(n)) {
-                    visited.put(n, new Node(n.val, new ArrayList<>()));
+                    visited.put(n, new Node2(n.val, new ArrayList<>()));
                     queue.offer(n);
                 }
                 visited.get(tmp).neighbors.add(visited.get(n));

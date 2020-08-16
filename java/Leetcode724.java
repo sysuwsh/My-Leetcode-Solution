@@ -1,11 +1,11 @@
 public class Leetcode724 {
     public static void main(String[] args) {
         int[] nums = {-1, -1, -1, -1, 0, -1};
-        Solution s = new Solution();
+        Solution724 s = new Solution724();
         int result = s.pivotIndex(nums);
         System.out.println(result);
 
-        Solution1 s1 = new Solution1();
+        Solution724_1 s1 = new Solution724_1();
         int result1 = s1.pivotIndex(nums);
         System.out.println(result1);
 
@@ -13,7 +13,7 @@ public class Leetcode724 {
 }
 
 // 前缀和解法
-class Solution{
+class Solution724 {
     public int pivotIndex(int[] nums) {
         int left_sum = 0;
         int total = 0;
@@ -31,7 +31,7 @@ class Solution{
 }
 
 // 双指针解法
-class Solution1{
+class Solution724_1 {
     public int pivotIndex(int[] nums){
         int left = 0;
         int right = 0;

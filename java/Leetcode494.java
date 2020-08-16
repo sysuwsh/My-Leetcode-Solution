@@ -5,7 +5,7 @@ public class Leetcode494 {
     public static void main(String[] args) {
         int[] nums = new int[]{0,0,0,0,0,0,0,0,1};
         int target = 1;
-        Solution3 s = new Solution3();
+        Solution494 s = new Solution494();
         System.out.println(s.findTargetSumWays(nums, target));
     }
 }
@@ -23,7 +23,7 @@ public class Leetcode494 {
     dp[0][...] = 0  就是没有任何物品，那么任何背包承重都无法满足
     (dp[...][0] = 1  当背包承重为0时，不选任何物品放入就是唯一的方法) 这句话应该不对，因为当背包承重为0的时候，可能有x个物品的重量都为0，那么在这x个物品中任意选就好了
 */
-class Solution2 {
+class Solution494 {
     public int findTargetSumWays(int[] nums, int S) {
         int sum = 0;
         for (int n: nums) sum += n;
@@ -54,7 +54,7 @@ class Solution2 {
 
 // 采用动态规划的思想时，可以优化一下dp数组的空间
 // 由状态方程可知，dp[i][j]只和i-1时候的值有关，因此可以将dp[n][sum]的空间优化为dp[sum]的空间
-class Solution3 {
+class Solution494_1 {
     public int findTargetSumWays(int[] nums, int S) {
         int sum = 0;
         for (int n: nums) sum += n;
@@ -84,7 +84,7 @@ class Solution3 {
 
 // 采用回溯法的时候，有可能出现重复的状态，就是当i和target都相等的时候
 // 这个时候可以采用一个备忘录来记录下出现过的状态，遇到的时候直接调用结果就好
-class Solution1 {
+class Solution494_2 {
     private Map<String, Integer> memo = new HashMap<>();
 
     public int findTargetSumWays(int[] nums, int S) {
@@ -110,7 +110,7 @@ class Solution1 {
 
 
 // 采用dfs回溯的方式进行穷举
-class Solution {
+class Solution494_3 {
     private int res = 0;
 
     public int findTargetSumWays(int[] nums, int S) {
